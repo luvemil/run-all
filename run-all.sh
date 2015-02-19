@@ -2,5 +2,5 @@
 
 cd ../analysis && forever -w start app.js
 cd ../analysis-frontend && middleman server &
-cd ../rzmq-workers && ./rzmq-worker.R 
+cd ../rzmq-workers && ./rzmq-worker.R &
 cd ../analysis && forever logs app.js -f
